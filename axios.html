@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>API Gatitos</h1>
+        <span id="error"></span>
+        <section id="random" class="container">
+            <h2>Gatitos aleatorios</h2>
+            <section id="container_gatitos_random" class="container_gatitos">
+                
+            </section>
+            <button onclick="reloadRandomCats()" class="change">Otros gatitos</button> 
+            
+        </section>
+            
+        <section id="section_favorites" class="container" >
+            <h2>Gatitos favoritos</h2>
+            <section id="favorites" class="container_gatitos">
+            </section>
+        </section>
+       
+        <!--Agregado  -->
+        <section id="uploadingCat" class="uploading">
+            <h2>Sube la todo de tu gatito</h2>
+            <form id="uploadCatForm" class="uploadForm">
+                <label for="file" class="file-upload">
+                    <span>Cargar foto</span>
+                    <input id="file" class="file-input" type="file" name="file" onchange="previewImage()" >
+                </label>
+                <img id="preview" class="imgPreview">
+                <button type="button" class="btn-send" onclick="uploadCatPhoto()">Subir foto</button>
+            </form>
+            
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="APIGatitoMejorado.js"></script>
+
+    
+</body>
+</html>

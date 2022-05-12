@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(4, 95, 141);
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    color: orange;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container_gatitos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card .card_img{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    
+}
+button{
+    width: 180px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    display: inline;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85);
+}
+.card_button{
+    margin-bottom: 10px;
+}
+
+.change{
+    background-color: rgb(69, 152, 133);
+    margin: 10px auto;
+    width: 400px;
+}
+
+.uploading{
+    width: 300px;
+    height: 257px;
+    background-color: rgb(93, 176, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px white;
+    margin: 10px auto;
+}
+.uploadFrom{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.file-input{
+    /* background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    color: blue;*/ 
+    visibility:hidden;
+
+}
+.file-upload{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(182, 182, 182);
+    padding: 5px;
+    color: black;
+    display: block;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.imgPreview{
+    width: 200px;
+    height: 150px;
+}
+.btn-send{
+    width: 200px;
+    height: 30px;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    bottom: 6px;
+    left: 48px;
+    
+}
+button:hover{
+    background-color: rgb(86, 86, 228);
+}
+button:active{
+    background-color: rgb(123, 123, 242);
+}

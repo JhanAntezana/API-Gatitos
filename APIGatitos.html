@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>API Gatitos</h1>
+        <span id="error"></span>
+        <section id="random" class="container">
+            <h2>Gatitos aleatorios</h2>
+            <section id="container_gatitos_random" class="container_gatitos">
+                
+            </section>
+            <button onclick="reloadRandomCats()" class="change">Otros gatitos</button> 
+            
+        </section>
+            
+        <section id="section_favorites" class="container" >
+            <h2>Gatitos favoritos</h2>
+            <section id="favorites" class="container_gatitos">
+            </section>
+        </section>
+        <script src="APIGatito.js"></script>
+    </main>
+</body>
+</html>

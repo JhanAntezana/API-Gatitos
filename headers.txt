@@ -1,0 +1,54 @@
+Uno de los headers que determinaremos al enviar datos es el Content Type, es decir, que tipo de dato será lo que enviaremos, para que el backend pueda decir: Ah! Me están enviando un tipo de dato X, entonces debo leer el body de esta manera.
+
+Tenemos muchísimos tipos de content types, empecemos a citarlos y agruparlos por categorías para que sea más fácil la lectura:
+
+-Application: {
+    application/json, 
+    application/xml,
+    application/zip,
+    application/x-www-form-urlencoded: "para enviar datos de formularios HTML"
+}
+Envío de archivos de audio literalmente
+-Audio: {
+    audio/mpeg,
+    audio/x-ms-wma,
+    audio/vnd.rn-realaudio,
+    audio/w-wav
+}
+-Image: {
+    image/gif,
+    image/jpeg,
+    image/png,
+    image/x-icon, 
+    image/svg+xml
+}
+
+Video: {
+    video/mpeg,
+    video/mp4,
+    video/quicktime,
+    video/webm
+}
+
+Multipart: {
+    multipart/mixed,
+    multipart/alternative,
+    multipart/related,
+    multipart/form-data: "sirve para enviar datos de formularios, nos ahorra tener que hacer un querySelector a cada input y su value, al usar este tipo de dato podemos agrupar todos esos datos en uno solo"
+}
+
+Text: {
+    text/css,
+    text/csv,
+    text/html,
+    text/plain,
+    text/xml
+}
+
+VND: {
+    application/vnd.ms-excel,
+    application/vnd.ms-powerpoint,
+    application/msword
+}
+
+Más info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
